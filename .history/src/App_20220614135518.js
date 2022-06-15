@@ -72,7 +72,6 @@ const App = () => {
               <Route path='/tents/tent/:tentid' element={<Tent />} />
               <Route path='/plants' element='Plants' />
               <Route path='/plants/plant/:plantid' element={<Plant />} />
-              <Route path='/Sensors' element='Sensors'/>
 
               {/* Apps */}
               <Route path='/tasks' element={<Tasks />} />

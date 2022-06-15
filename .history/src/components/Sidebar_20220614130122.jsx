@@ -7,7 +7,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { links } from '../data/dummy';
 
 const Sidebar = () => {
-  const activeMenu = true;
+  const activeMenu = false;
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded_lg text-yellow-600 text-md m-2';
   const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded_lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
 
@@ -20,7 +20,7 @@ const Sidebar = () => {
           <SiShopware className='text-xl text-yellow-600'/><span className='text-yellow-600'>Smarden</span>
         </Link>
         <TooltipComponent content="Menu" position='BottomCenter'>
-          <button type='button' onClick={() => {}} className='text-xl rounded-full p-3 hover:bg-yellow-600 hover:blur-sm mt-4 block'>
+          <button type='button' onClick={() => {}} className='text-xl rounded-full p-3 hover:bg-yellow-500 mt-4 block md:hidden'>
             <MdOutlineCancel />
           </button>
         </TooltipComponent>

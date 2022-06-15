@@ -20,7 +20,7 @@ const Sidebar = () => {
           <SiShopware className='text-xl text-yellow-600'/><span className='text-yellow-600'>Smarden</span>
         </Link>
         <TooltipComponent content="Menu" position='BottomCenter'>
-          <button type='button' onClick={() => {}} className='text-xl rounded-full p-3 hover:bg-yellow-600 hover:blur-sm mt-4 block'>
+          <button type='button' onClick={() => {}} className='text-xl rounded-full p-3 hover:bg-yellow-500 mt-4 blur-sm block'>
             <MdOutlineCancel />
           </button>
         </TooltipComponent>

@@ -14,9 +14,6 @@ import {
   Notes,
   Tasks,
   Tents,
-  Tent,
-  Plants,
-  Plant,
   HumidityChart,
   TemperatureChart,
 } from './pages';
@@ -69,10 +66,8 @@ const App = () => {
               <Route path='/batches' element='Batches' />
               <Route path='/batches/batch/:batchid' element={<Batch />} />
               <Route path='/tents' element={<Tents />} />
-              <Route path='/tents/tent/:tentid' element={<Tent />} />
               <Route path='/plants' element='Plants' />
               <Route path='/plants/plant/:plantid' element={<Plant />} />
-              <Route path='/Sensors' element='Sensors'/>
 
               {/* Apps */}
               <Route path='/tasks' element={<Tasks />} />

@@ -10,14 +10,18 @@ import {
   Batch,
   Batches,
   Calendar,
+  ColorPicker,
   Dashboard,
   Notes,
   Tasks,
-  Tents,
   Tent,
-  Plants,
-  Plant,
+  Area,
+  Bar,
+  ColorMapping,
   HumidityChart,
+  Line,
+  Pie,
+  Stacked,
   TemperatureChart,
 } from './pages';
 
@@ -30,11 +34,11 @@ const App = () => {
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
           <div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
-            <TooltipComponent content='Settings' position='Top Left'>
+            <TooltipComponent content='Settings' position='Bottom Left'>
               <button
                 type='button'
                 className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-                style={{ background: 'rgb(202 138 4)', borderRadius: '100%' }}>
+                style={{ background: 'red', borderRadius: '100%' }}>
                 <FiSettings />
               </button>
             </TooltipComponent>
@@ -68,11 +72,10 @@ const App = () => {
               {/* pages */}
               <Route path='/batches' element='Batches' />
               <Route path='/batches/batch/:batchid' element={<Batch />} />
-              <Route path='/tents' element={<Tents />} />
-              <Route path='/tents/tent/:tentid' element={<Tent />} />
-              <Route path='/plants' element='Plants' />
-              <Route path='/plants/plant/:plantid' element={<Plant />} />
-              <Route path='/Sensors' element='Sensors'/>
+              <Route
+                path='/batches/batch/:batchid/tent/:tentid'
+                element={<tent />}
+              />
 
               {/* Apps */}
               <Route path='/tasks' element={<Tasks />} />

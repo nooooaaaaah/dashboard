@@ -3,14 +3,15 @@ import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutline
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
-import { RiStockLine } from 'react-icons/ri';
-import { MdSensors, MdOutlineSupervisorAccount } from 'react-icons/md';
+import { IoMdContacts } from 'react-icons/io';
+import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { GiCycle } from 'react-icons/gi';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid, GiGreenhouse } from 'react-icons/gi';
+import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
-import { TbPlant } from 'react-icons/tb';
+import { GiGreenhouse } from 'react-icons/gi';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -494,11 +495,11 @@ export const links = [
       },
       {
         name: 'Plants',
-        icon: <TbPlant />,
+        icon: <RiContactsLine />,
       },
       {
         name: 'Sensors',
-        icon: <MdSensors />,
+        icon: <IoMdContacts />,
       },
     ],
   },
@@ -514,8 +515,16 @@ export const links = [
         icon: <BsKanban />,
       },
       {
-        name: 'Notes',
+        name: 'editor',
         icon: <FiEdit />,
+      },
+      {
+        name: 'color-picker',
+        icon: <BiColorFill />,
+      },
+      {
+        name: 'tacos',
+        icon: <BiColorFill />,
       },
     ],
   },
@@ -532,7 +541,27 @@ export const links = [
       },
 
       {
-        name: 'Harvest',
+        name: 'bar',
+        icon: <AiOutlineBarChart />,
+      },
+      {
+        name: 'pie',
+        icon: <FiPieChart />,
+      },
+      {
+        name: 'financial',
+        icon: <RiStockLine />,
+      },
+      {
+        name: 'color-mapping',
+        icon: <BsBarChart />,
+      },
+      {
+        name: 'pyramid',
+        icon: <GiLouvrePyramid />,
+      },
+      {
+        name: 'stacked',
         icon: <AiOutlineBarChart />,
       },
     ],

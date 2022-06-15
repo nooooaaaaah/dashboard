@@ -8,7 +8,6 @@ export {default as Tasks} from './Tasks';
 export {default as Tents} from './Tents';
 export {default as Tent} from './Tent';
 export {default as Plants} from './Plants';
-export {default as Plant} from './Plant';
 // charts
 export {default as HumidityChart} from './Charts/HumidityChart';
 export {default as TemperatureChart} from './Charts/TemperatureChart';
