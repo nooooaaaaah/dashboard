@@ -27,7 +27,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } = useStateContext();
+  const { activeMenu, setActiveMenu, handleClick } = useStateContext();
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
@@ -42,14 +42,14 @@ const Navbar = () => {
         <NavButton
           title='Chat'
           color='rgb(202 138 4)'
-          dotColor={'rgb(55 48 163)'}
+          dotColor={'rgb(124 124 332)'}
           customFunc={() => handleClick('chat')}
           icon={<BsChatLeft />}
         />
         <NavButton
           title='Notifications'
           color='rgb(202 138 4)'
-          dotColor={'rgb(55 48 163)'}
+          dotColor={'rgb(124 124 332)'}
           customFunc={() => handleClick('notification')}
           icon={<RiNotification3Line />}
         />
@@ -59,23 +59,19 @@ const Navbar = () => {
             className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
             onClick={() => handleClick('userProfile')}>
             <img
-              className='rounded-full w-7 h-7'
+              className='rounded-full w-8 h-8'
               src={avatar}
               alt='user-profile'
             />
             <p>
-              <span className='text-indigo-800 text-14'>Hi,</span>{' '}
-              <span className='text-indigo-800 font-bold ml-1 text-14'>
+              <span className='text-indigo-600 text-14'>Hi,</span>{' '}
+              <span className='text-indigo-600 font-bold ml-1 text-14'>
                 Noah
               </span>
             </p>
             <MdKeyboardArrowDown className='text-yellow-600 text-14' />
           </div>
         </TooltipComponent>
-
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
   );

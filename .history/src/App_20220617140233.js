@@ -22,11 +22,12 @@ import {
 } from './pages';
 
 import './App.css';
-import { useStateContext } from './contexts/ContextProvider';
+import {useStateContext} from './context/ContextProvider';
 
 const App = () => {
-  const { activeMenu } = useStateContext();
 
+  const {activeMenu} = useStateContext();
+  
   return (
     <div className='app'>
       <BrowserRouter>
@@ -74,7 +75,7 @@ const App = () => {
               <Route path='/tents/tent/:tentid' element={<Tent />} />
               <Route path='/plants' element='Plants' />
               <Route path='/plants/plant/:plantid' element={<Plant />} />
-              <Route path='/Sensors' element='Sensors' />
+              <Route path='/Sensors' element='Sensors'/>
 
               {/* Apps */}
               <Route path='/tasks' element={<Tasks />} />

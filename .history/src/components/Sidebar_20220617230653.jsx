@@ -33,7 +33,7 @@ const Sidebar = () => {
                   setActiveMenu((prevActiveMenu) => !prevActiveMenu)
                 }
                 className='text-xl rounded-full p-3 hover:bg-yellow-600 hover:blur-sm mt-4 block md:hidden'>
-                <MdMenu className='text-yellow-600' />
+                <MdMenu />
               </button>
             </TooltipComponent>
           </div>

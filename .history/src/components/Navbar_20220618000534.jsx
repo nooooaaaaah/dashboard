@@ -72,10 +72,6 @@ const Navbar = () => {
             <MdKeyboardArrowDown className='text-yellow-600 text-14' />
           </div>
         </TooltipComponent>
-
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
   );

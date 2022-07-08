@@ -73,9 +73,9 @@ const Navbar = () => {
           </div>
         </TooltipComponent>
 
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
+        {isClicked.chat === 'chat' && <Chat />}
+        {isClicked.Notification === 'notification' && <Notification />}
+        {isClicked.UserProfile === 'userProfile' && <UserProfile />}
       </div>
     </div>
   );

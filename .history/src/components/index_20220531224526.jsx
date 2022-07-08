@@ -11,4 +11,3 @@ export { default as Pie } from './Charts/Pie';
 export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
 export { default as Sidebar } from './Sidebar';
-export { default as Chat } from './Chat';

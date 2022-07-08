@@ -22,11 +22,9 @@ import {
 } from './pages';
 
 import './App.css';
-import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const { activeMenu } = useStateContext();
-
+  const activeMenu = true;
   return (
     <div className='app'>
       <BrowserRouter>
@@ -35,9 +33,9 @@ const App = () => {
             <TooltipComponent content='Settings' position='Top Left'>
               <button
                 type='button'
-                className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white hover:blur-sm'
+                className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
                 style={{ background: 'rgb(202 138 4)', borderRadius: '100%' }}>
-                <FiSettings />
+                <FiSettings className='hover:blur-sm' />
               </button>
             </TooltipComponent>
           </div>
@@ -74,7 +72,7 @@ const App = () => {
               <Route path='/tents/tent/:tentid' element={<Tent />} />
               <Route path='/plants' element='Plants' />
               <Route path='/plants/plant/:plantid' element={<Plant />} />
-              <Route path='/Sensors' element='Sensors' />
+              <Route path='/Sensors' element='Sensors'/>
 
               {/* Apps */}
               <Route path='/tasks' element={<Tasks />} />

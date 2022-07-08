@@ -27,7 +27,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } = useStateContext();
+  const { activeMenu, setActiveMenu, handleClick } = useStateContext();
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
@@ -59,7 +59,7 @@ const Navbar = () => {
             className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
             onClick={() => handleClick('userProfile')}>
             <img
-              className='rounded-full w-7 h-7'
+              className='rounded-full w-8 h-8'
               src={avatar}
               alt='user-profile'
             />
@@ -72,10 +72,6 @@ const Navbar = () => {
             <MdKeyboardArrowDown className='text-yellow-600 text-14' />
           </div>
         </TooltipComponent>
-
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
   );
