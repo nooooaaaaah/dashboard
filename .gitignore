@@ -24,6 +24,9 @@ yarn-error.log*
 
 # other
 .prettierrc
-.vscode
 jsconfig.json
 /wirefames
+
+# vscode ish
+.vscode
+.history
