@@ -210,6 +210,24 @@ const areaChartData = [
   ],
 ];
 
+export const lineGraphTemperatureData = [
+  {timestamp:'07/15/2022 2:15 PM', temp: 72},
+  {timestamp:'07/15/2022 2:15 PM', temp: 75},
+  {timestamp:'07/15/2022 2:15 PM', temp: 78},
+  {timestamp:'07/15/2022 2:15 PM', temp: 78},
+  {timestamp:'07/15/2022 2:15 PM', temp: 79},
+  {timestamp:'07/15/2022 2:15 PM', temp: 83},
+  {timestamp:'07/15/2022 2:15 PM', temp: 80},
+  {timestamp:'07/15/2022 2:15 PM', temp: 77},
+  {timestamp:'07/15/2022 2:15 PM', temp: 75},
+  {timestamp:'07/15/2022 2:15 PM', temp: 75},
+  {timestamp:'07/15/2022 2:15 PM', temp: 73},
+  {timestamp:'07/15/2022 2:15 PM', temp: 70},
+  {timestamp:'07/15/2022 2:15 PM', temp: 70},
+  {timestamp:'07/15/2022 2:15 PM', temp: 71},
+];
+
+
 export const areaCustomSeries = [
   {
     dataSource: areaChartData[0],
