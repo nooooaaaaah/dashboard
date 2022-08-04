@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { MdMenu } from 'react-icons/md';
 import { FiShoppingCart } from 'react-icons/fi';
 import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
@@ -25,7 +25,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
     </button>
   </TooltipComponent>
 );
-
+// asdasdasd
 const Navbar = () => {
   const {
     activeMenu,
@@ -43,7 +43,7 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
     handleResize();
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [setScreenSize]);
 
   useEffect(() => {
     if (screenSize <= 900) {
@@ -51,17 +51,17 @@ const Navbar = () => {
     } else {
       setActiveMenu(true);
     }
-  }, [screenSize]);
+  }, [screenSize, setActiveMenu]);
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
-    <div className='flex justify-between p-2 md:ml-6 md:mr-6 relative'>
+    <div className='flex justify-between p-2 md:ml-6 md:mr-6 relative overflow-auto'>
       <NavButton
         title='Menu'
         color='rgb(202 138 4)'
         customFunc={handleActiveMenu}
-        icon={<AiOutlineMenu />}
+        icon={<MdMenu />}
       />
       <div className='flex'>
         <NavButton
