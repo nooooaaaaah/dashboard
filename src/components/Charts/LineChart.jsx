@@ -30,12 +30,12 @@ const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Line Chart',
+      text: 'Temperature & Humidity',
     },
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30'];
 
 class LineChart extends React.Component {
   constructor() {
@@ -46,15 +46,15 @@ class LineChart extends React.Component {
         {
           label: 'Temp',
           data: labels.map(() =>
-            faker.datatype.number({ min: -1000, max: 1000 })
+            faker.datatype.number({ min: 60, max: 95 })
           ),
           borderColor: 'rgb(255, 99, 132)',
           backgroundColor: 'rgba(255, 99, 132, 0.5)',
         },
         {
-          label: 'Dataset 2',
+          label: 'RH',
           data: labels.map(() =>
-            faker.datatype.number({ min: -1000, max: 1000 })
+            faker.datatype.number({ min: 30, max: 100 })
           ),
           borderColor: 'rgb(53, 162, 235)',
           backgroundColor: 'rgba(53, 162, 235, 0.5)',
@@ -64,7 +64,7 @@ class LineChart extends React.Component {
   }
 
   render() {
-    return <Line options={options} data={this.data} />;
+    return <Line options={options} data={this.data} className='m-14'/>;
   }
 }
 export default LineChart;
